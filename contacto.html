@@ -29,13 +29,13 @@
 <li>
 
       <ol>
-          <form action="index.html" method="get">
+          <form action="index.html" method="get" enctype="multipart/form-data"> 
 
 
           
 <div>
    <label for> Nombre: </label>
-        <input type="text" name="Nombre" id="Nombre" placeholder="Ingresa tu nombre" required> <br>
+        <input type="text" name="Nombre" id="Nombre" placeholder="Ingresa tu nombre" required autocomplete="additional-name"> <br>
 </div>
 
 
@@ -71,8 +71,29 @@
   <label for="Otro">Otro</label>
 <input type="radio" name="genero" id="Otro">
 </div>
+<br>
+
+<div>
+  <label for="Ciudad">Ciudades</label>
+<select name="Ciudad" id="Ciudad">
+  <option value="Bucaramanga">Bucaramanga</option>
+  <option value="Bogotá">Bogotá</option>
+  <option value="Medellín">Medellín</option>
+  <option value="Cali">Cali</option>
+</select>
+</div>
+<br>
+<br>
+<input type="date" name="" id="">
+<br>
+<br>
 
 
+<div>
+  <input type="file" name="file" id="file">
+</div>
+
+<textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
 
   <button>Enviar</button>
             </form>
